@@ -6,7 +6,6 @@ const productSchema = new mongoose.Schema({
     name:String,
     description:String,
     active:Boolean,
-    photo:String,
     category:{type:mongoose.Schema.ObjectId, ref:"categories"},
     price:Number,
     supplier:{type:mongoose.Schema.ObjectId, ref:"user"},
