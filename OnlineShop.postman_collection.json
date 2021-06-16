@@ -1,0 +1,1924 @@
+{
+	"info": {
+		"_postman_id": "76f39362-7952-4e62-8db0-1c431259ee5c",
+		"name": "OnlineShop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "RegisterUserAdmin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "/Users/alfredovarelo/Documents/batman.jpeg"
+								},
+								{
+									"key": "name",
+									"value": "Jose",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "jose@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "12312321",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "calle 1",
+									"type": "text"
+								},
+								{
+									"key": "roleId",
+									"value": "60c8da031c63e04d2ff8533d",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/user/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"user",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RegisterUser (Auto)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "/Users/alfredovarelo/Documents/batman.jpeg"
+								},
+								{
+									"key": "name",
+									"value": "Pepe",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "pepe@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "12312321",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "calle 1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/user/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RegisterUserEmployee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "/Users/alfredovarelo/Documents/batman.jpeg"
+								},
+								{
+									"key": "name",
+									"value": "Jose",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "jose@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "12312321",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "calle 1",
+									"type": "text"
+								},
+								{
+									"key": "roleId",
+									"value": "60c8dae647a2a44e9b84bf4e",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/user/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"user",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateUserSupplier",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "/Users/alfredovarelo/Documents/descarga.jpeg"
+								},
+								{
+									"key": "name",
+									"value": "Maria",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "maria@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "12312321",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "calle 2",
+									"type": "text"
+								},
+								{
+									"key": "roleId",
+									"value": "60c8dc028a965c4fbecf1caa",
+									"type": "text"
+								},
+								{
+									"key": "_id",
+									"value": "60c8ecb2cb1405669a461541",
+									"type": "text"
+								},
+								{
+									"key": "active",
+									"value": "true",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/user/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"user",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteUserSupplier",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGM4ZWFiMGNiMTQwNTY2OWE0NjE1M2YiLCJuYW1lIjoiSm9zZSIsInJvbGVJZCI6IjYwYzhkYTAzMWM2M2UwNGQyZmY4NTMzZCIsImlhdCI6MTYyMzc4NTg1OH0.Dp85x8U__9IC0VCZnqgq5YHh6qCp_NbEYWfM3LZ4nfU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "/Users/alfredovarelo/Documents/descarga.jpeg"
+								},
+								{
+									"key": "name",
+									"value": "Maria",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "maria@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "12312321",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "calle 1",
+									"type": "text"
+								},
+								{
+									"key": "roleId",
+									"value": "60c8dc028a965c4fbecf1caa",
+									"type": "text"
+								},
+								{
+									"key": "_id",
+									"value": "60c8ecb2cb1405669a461541",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/user/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"user",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "/Users/alfredovarelo/Documents/batman.jpeg"
+								},
+								{
+									"key": "name",
+									"value": "Jose",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "jose@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "12312321",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "calle 1",
+									"type": "text"
+								},
+								{
+									"key": "roleId",
+									"value": "60c8da031c63e04d2ff8533d",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/user/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"user",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/user/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"user",
+								"list"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Role",
+			"item": [
+				{
+					"name": "Register Admin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGM4ZWFiMGNiMTQwNTY2OWE0NjE1M2YiLCJuYW1lIjoiSm9zZSIsInJvbGVJZCI6IjYwYzhkYTAzMWM2M2UwNGQyZmY4NTMzZCIsImlhdCI6MTYyMzc4NTg1OH0.Dp85x8U__9IC0VCZnqgq5YHh6qCp_NbEYWfM3LZ4nfU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"admin\",\n    \"description\":\"Este es un administrador\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/role/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"role",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register Employee",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGM4ZWFiMGNiMTQwNTY2OWE0NjE1M2YiLCJuYW1lIjoiSm9zZSIsInJvbGVJZCI6IjYwYzhkYTAzMWM2M2UwNGQyZmY4NTMzZCIsImlhdCI6MTYyMzc4NTg1OH0.Dp85x8U__9IC0VCZnqgq5YHh6qCp_NbEYWfM3LZ4nfU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"empleado\",\n    \"description\":\"Este es un empleado\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/role/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"role",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register Costumer",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGM4ZWFiMGNiMTQwNTY2OWE0NjE1M2YiLCJuYW1lIjoiSm9zZSIsInJvbGVJZCI6IjYwYzhkYTAzMWM2M2UwNGQyZmY4NTMzZCIsImlhdCI6MTYyMzc4NTg1OH0.Dp85x8U__9IC0VCZnqgq5YHh6qCp_NbEYWfM3LZ4nfU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"usuario\",\n    \"description\":\"Este es un usuario\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/role/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"role",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register Supplier",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGM4ZWFiMGNiMTQwNTY2OWE0NjE1M2YiLCJuYW1lIjoiSm9zZSIsInJvbGVJZCI6IjYwYzhkYTAzMWM2M2UwNGQyZmY4NTMzZCIsImlhdCI6MTYyMzc4NTg1OH0.Dp85x8U__9IC0VCZnqgq5YHh6qCp_NbEYWfM3LZ4nfU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"proveedor\",\n    \"description\":\"Este es un proveedor\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/role/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"role",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LIst Role",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGM4ZWFiMGNiMTQwNTY2OWE0NjE1M2YiLCJuYW1lIjoiSm9zZSIsInJvbGVJZCI6IjYwYzhkYTAzMWM2M2UwNGQyZmY4NTMzZCIsImlhdCI6MTYyMzc4NTg1OH0.Dp85x8U__9IC0VCZnqgq5YHh6qCp_NbEYWfM3LZ4nfU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/role/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"role",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Role",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGM4ZWFiMGNiMTQwNTY2OWE0NjE1M2YiLCJuYW1lIjoiSm9zZSIsInJvbGVJZCI6IjYwYzhkYTAzMWM2M2UwNGQyZmY4NTMzZCIsImlhdCI6MTYyMzc4NTg1OH0.Dp85x8U__9IC0VCZnqgq5YHh6qCp_NbEYWfM3LZ4nfU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"_id\":\"60c8da031c63e04d2ff8533d\",\n    \"name\":\"admin\",\n    \"description\":\"I'm an admin\",\n    \"active\":true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/role/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"role",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User State",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGM4ZWFiMGNiMTQwNTY2OWE0NjE1M2YiLCJuYW1lIjoiSm9zZSIsInJvbGVJZCI6IjYwYzhkYTAzMWM2M2UwNGQyZmY4NTMzZCIsImlhdCI6MTYyMzc4NTg1OH0.Dp85x8U__9IC0VCZnqgq5YHh6qCp_NbEYWfM3LZ4nfU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"_id\":\"60c8da031c63e04d2ff8533d\",\n    \"name\":\"admin\",\n    \"description\":\"I'm an admin\",\n    \"active\":true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/role/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"role",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Register Product 1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGM4ZWFiMGNiMTQwNTY2OWE0NjE1M2YiLCJuYW1lIjoiSm9zZSIsInJvbGVJZCI6IjYwYzhkYTAzMWM2M2UwNGQyZmY4NTMzZCIsImlhdCI6MTYyMzc4NTg1OH0.Dp85x8U__9IC0VCZnqgq5YHh6qCp_NbEYWfM3LZ4nfU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "photo",
+									"type": "file",
+									"src": "/Users/alfredovarelo/Documents/descarga.jpeg"
+								},
+								{
+									"key": "name",
+									"value": "Cama",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Es una cama",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "200000",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "60c8f6b992f466724468acb9",
+									"type": "text"
+								},
+								{
+									"key": "supplier",
+									"value": "60c8ecb2cb1405669a461541",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/product/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"product",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Product 1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGM4ZWFiMGNiMTQwNTY2OWE0NjE1M2YiLCJuYW1lIjoiSm9zZSIsInJvbGVJZCI6IjYwYzhkYTAzMWM2M2UwNGQyZmY4NTMzZCIsImlhdCI6MTYyMzc4NTg1OH0.Dp85x8U__9IC0VCZnqgq5YHh6qCp_NbEYWfM3LZ4nfU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "photo",
+									"type": "file",
+									"src": "/Users/alfredovarelo/Documents/descarga.jpeg"
+								},
+								{
+									"key": "name",
+									"value": "Cama",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Es una cama",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "200000",
+									"type": "text"
+								},
+								{
+									"key": "_id",
+									"value": "60c8f864ff9b4b75631cdf63",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "60c8f74b27874773ebaa2afb",
+									"type": "text"
+								},
+								{
+									"key": "active",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "supplier",
+									"value": "60c8ecb2cb1405669a461541",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/product/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"product",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register Product 2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGM4ZWFiMGNiMTQwNTY2OWE0NjE1M2YiLCJuYW1lIjoiSm9zZSIsInJvbGVJZCI6IjYwYzhkYTAzMWM2M2UwNGQyZmY4NTMzZCIsImlhdCI6MTYyMzc4NTg1OH0.Dp85x8U__9IC0VCZnqgq5YHh6qCp_NbEYWfM3LZ4nfU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "photo",
+									"type": "file",
+									"src": "/Users/alfredovarelo/Documents/descarga.jpeg"
+								},
+								{
+									"key": "name",
+									"value": "Moto G ",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Es una telefono",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "200000",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "60c8f74b27874773ebaa2afb",
+									"type": "text"
+								},
+								{
+									"key": "supplier",
+									"value": "60c8ecb2cb1405669a461541",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/product/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"product",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Product 2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGM4ZWFiMGNiMTQwNTY2OWE0NjE1M2YiLCJuYW1lIjoiSm9zZSIsInJvbGVJZCI6IjYwYzhkYTAzMWM2M2UwNGQyZmY4NTMzZCIsImlhdCI6MTYyMzc4NTg1OH0.Dp85x8U__9IC0VCZnqgq5YHh6qCp_NbEYWfM3LZ4nfU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "photo",
+									"type": "file",
+									"src": "/Users/alfredovarelo/Documents/descarga.jpeg"
+								},
+								{
+									"key": "name",
+									"value": "Cama 2.0",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Esto es una cama ",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "200000",
+									"type": "text"
+								},
+								{
+									"key": "_id",
+									"value": "60c8fb8f1c27d277b894b53f",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "60c8f74b27874773ebaa2afb",
+									"type": "text"
+								},
+								{
+									"key": "active",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "supplier",
+									"value": "60c8ecb2cb1405669a461541",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/product/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"product",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deleted Product 2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGM4ZWFiMGNiMTQwNTY2OWE0NjE1M2YiLCJuYW1lIjoiSm9zZSIsInJvbGVJZCI6IjYwYzhkYTAzMWM2M2UwNGQyZmY4NTMzZCIsImlhdCI6MTYyMzc4NTg1OH0.Dp85x8U__9IC0VCZnqgq5YHh6qCp_NbEYWfM3LZ4nfU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "photo",
+									"type": "file",
+									"src": "/Users/alfredovarelo/Documents/descarga.jpeg"
+								},
+								{
+									"key": "name",
+									"value": "Cama",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Es una cama",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "200000",
+									"type": "text"
+								},
+								{
+									"key": "_id",
+									"value": "60c8fb8f1c27d277b894b53f",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "60c8f74b27874773ebaa2afb",
+									"type": "text"
+								},
+								{
+									"key": "supplier",
+									"value": "60c8ecb2cb1405669a461541",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/product/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"product",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register Product 3",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGM4ZWFiMGNiMTQwNTY2OWE0NjE1M2YiLCJuYW1lIjoiSm9zZSIsInJvbGVJZCI6IjYwYzhkYTAzMWM2M2UwNGQyZmY4NTMzZCIsImlhdCI6MTYyMzc4NTg1OH0.Dp85x8U__9IC0VCZnqgq5YHh6qCp_NbEYWfM3LZ4nfU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "photo",
+									"type": "file",
+									"src": "/Users/alfredovarelo/Documents/descarga.jpeg"
+								},
+								{
+									"key": "name",
+									"value": "Moto C",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Es una telefono",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "300000",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "60c8f74b27874773ebaa2afb",
+									"type": "text"
+								},
+								{
+									"key": "supplier",
+									"value": "60c8ecb2cb1405669a461541",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/product/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"product",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Products",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGM4ZWFiMGNiMTQwNTY2OWE0NjE1M2YiLCJuYW1lIjoiSm9zZSIsInJvbGVJZCI6IjYwYzhkYTAzMWM2M2UwNGQyZmY4NTMzZCIsImlhdCI6MTYyMzc4NTg1OH0.Dp85x8U__9IC0VCZnqgq5YHh6qCp_NbEYWfM3LZ4nfU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/product/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"product",
+								"list"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "Register Category 1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGM4ZWFiMGNiMTQwNTY2OWE0NjE1M2YiLCJuYW1lIjoiSm9zZSIsInJvbGVJZCI6IjYwYzhkYTAzMWM2M2UwNGQyZmY4NTMzZCIsImlhdCI6MTYyMzc4NTg1OH0.Dp85x8U__9IC0VCZnqgq5YHh6qCp_NbEYWfM3LZ4nfU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Hogar\",\n    \"description\":\"Productos para tu casa\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/category/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"category",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register Category 2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGM4ZWFiMGNiMTQwNTY2OWE0NjE1M2YiLCJuYW1lIjoiSm9zZSIsInJvbGVJZCI6IjYwYzhkYTAzMWM2M2UwNGQyZmY4NTMzZCIsImlhdCI6MTYyMzc4NTg1OH0.Dp85x8U__9IC0VCZnqgq5YHh6qCp_NbEYWfM3LZ4nfU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Tecnología\",\n    \"description\":\"Productos para cambiar tu vida\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/category/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"category",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register Category 3",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGM4ZWFiMGNiMTQwNTY2OWE0NjE1M2YiLCJuYW1lIjoiSm9zZSIsInJvbGVJZCI6IjYwYzhkYTAzMWM2M2UwNGQyZmY4NTMzZCIsImlhdCI6MTYyMzc4NTg1OH0.Dp85x8U__9IC0VCZnqgq5YHh6qCp_NbEYWfM3LZ4nfU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Deportes\",\n    \"description\":\"Productos para ser un deportista\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/category/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"category",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Categories",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGM4ZWFiMGNiMTQwNTY2OWE0NjE1M2YiLCJuYW1lIjoiSm9zZSIsInJvbGVJZCI6IjYwYzhkYTAzMWM2M2UwNGQyZmY4NTMzZCIsImlhdCI6MTYyMzc4NTg1OH0.Dp85x8U__9IC0VCZnqgq5YHh6qCp_NbEYWfM3LZ4nfU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/category/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"category",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGM4ZWFiMGNiMTQwNTY2OWE0NjE1M2YiLCJuYW1lIjoiSm9zZSIsInJvbGVJZCI6IjYwYzhkYTAzMWM2M2UwNGQyZmY4NTMzZCIsImlhdCI6MTYyMzc4NTg1OH0.Dp85x8U__9IC0VCZnqgq5YHh6qCp_NbEYWfM3LZ4nfU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"_id\": \"60c8f7ab62658e746cf2a715\",\n    \"name\":\"Deportes\",\n    \"description\":\"Productos para ser el más activo\",\n    \"active\":true\n   \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/category/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"category",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGM4ZWFiMGNiMTQwNTY2OWE0NjE1M2YiLCJuYW1lIjoiSm9zZSIsInJvbGVJZCI6IjYwYzhkYTAzMWM2M2UwNGQyZmY4NTMzZCIsImlhdCI6MTYyMzc4NTg1OH0.Dp85x8U__9IC0VCZnqgq5YHh6qCp_NbEYWfM3LZ4nfU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"_id\": \"60c8f7ab62658e746cf2a715\",\n    \"name\":\"Deportes\",\n    \"description\":\"Productos para ser el más activo\"\n   \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/category/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"category",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Stock",
+			"item": [
+				{
+					"name": "Register Stock 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"productId\":\"60c8f864ff9b4b75631cdf63\",\n    \"quantity\":200,\n    \"active\":true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/stock/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"stock",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register Stock 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"productId\":\"60c8fb8f1c27d277b894b53f\",\n    \"quantity\":300,\n    \"active\":true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/stock/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"stock",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register Stock 3",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGM4ZWFiMGNiMTQwNTY2OWE0NjE1M2YiLCJuYW1lIjoiSm9zZSIsInJvbGVJZCI6IjYwYzhkYTAzMWM2M2UwNGQyZmY4NTMzZCIsImlhdCI6MTYyMzc4NTg1OH0.Dp85x8U__9IC0VCZnqgq5YHh6qCp_NbEYWfM3LZ4nfU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"productId\":\"60c964bbb8a0b1fb6ef1442f\",\n    \"quantity\":300,\n    \"active\":true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/stock/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"stock",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Stock 3",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n      \"_id\": \"60c8fd6869c08e7a953522f1\",\n    \"productId\":\"60c8fb8f1c27d277b894b53f\",\n    \"quantity\":300\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/stock/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"stock",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Stock 2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGM4ZWFiMGNiMTQwNTY2OWE0NjE1M2YiLCJuYW1lIjoiSm9zZSIsInJvbGVJZCI6IjYwYzhkYTAzMWM2M2UwNGQyZmY4NTMzZCIsImlhdCI6MTYyMzc4NTg1OH0.Dp85x8U__9IC0VCZnqgq5YHh6qCp_NbEYWfM3LZ4nfU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n      \"_id\": \"60c8fce3181ffa7a55695c88\",\n    \"productId\":\"60c8f864ff9b4b75631cdf63\",\n    \"quantity\":1000,\n    \"active\":true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/stock/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"stock",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Stock",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/stock/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"stock",
+								"list"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"jose@gmail.com\",\n    \"password\":\"1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "Register Order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGM4ZWFiMGNiMTQwNTY2OWE0NjE1M2YiLCJuYW1lIjoiSm9zZSIsInJvbGVJZCI6IjYwYzhkYTAzMWM2M2UwNGQyZmY4NTMzZCIsImlhdCI6MTYyMzc4NTg1OH0.Dp85x8U__9IC0VCZnqgq5YHh6qCp_NbEYWfM3LZ4nfU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\":\"60c8eab0cb1405669a46153f\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/order/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"order",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Orders",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGM4ZWFiMGNiMTQwNTY2OWE0NjE1M2YiLCJuYW1lIjoiSm9zZSIsInJvbGVJZCI6IjYwYzhkYTAzMWM2M2UwNGQyZmY4NTMzZCIsImlhdCI6MTYyMzc4NTg1OH0.Dp85x8U__9IC0VCZnqgq5YHh6qCp_NbEYWfM3LZ4nfU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/order/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"order",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Order -Pay Order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGM4ZWFiMGNiMTQwNTY2OWE0NjE1M2YiLCJuYW1lIjoiSm9zZSIsInJvbGVJZCI6IjYwYzhkYTAzMWM2M2UwNGQyZmY4NTMzZCIsImlhdCI6MTYyMzc4NTg1OH0.Dp85x8U__9IC0VCZnqgq5YHh6qCp_NbEYWfM3LZ4nfU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"_id\": \"60c907effa0d528b2458dd10\",\n            \"userId\": \"60c8eab0cb1405669a46153f\",\n            \"active\": false,\n            \"date\": \"2021-06-15T20:05:03.349Z\",\n            \"finished\": true\n            \n            }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/order/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"order",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete  Order",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"_id\": \"60c907effa0d528b2458dd10\",\n            \"userId\": \"60c8eab0cb1405669a46153f\",\n            \"active\": true,\n            \"date\": \"2021-06-15T20:05:03.349Z\",\n            \"finished\": true\n            \n            }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/order/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"order",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Orderdetail",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGM4ZWFiMGNiMTQwNTY2OWE0NjE1M2YiLCJuYW1lIjoiSm9zZSIsInJvbGVJZCI6IjYwYzhkYTAzMWM2M2UwNGQyZmY4NTMzZCIsImlhdCI6MTYyMzc4NTg1OH0.Dp85x8U__9IC0VCZnqgq5YHh6qCp_NbEYWfM3LZ4nfU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/orderdetail/list/60c907effa0d528b2458dd10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"orderdetail",
+								"list",
+								"60c907effa0d528b2458dd10"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order Detail",
+			"item": [
+				{
+					"name": "Add detail",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGM4ZWFiMGNiMTQwNTY2OWE0NjE1M2YiLCJuYW1lIjoiSm9zZSIsInJvbGVJZCI6IjYwYzhkYTAzMWM2M2UwNGQyZmY4NTMzZCIsImlhdCI6MTYyMzc4NTg1OH0.Dp85x8U__9IC0VCZnqgq5YHh6qCp_NbEYWfM3LZ4nfU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \n    \"orderId\":\"60c907effa0d528b2458dd10\",\n    \"productId\":\"60c8f864ff9b4b75631cdf63\",\n    \"quantity\":10\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/orderdetail/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"orderdetail",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add detail 2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGM4ZWFiMGNiMTQwNTY2OWE0NjE1M2YiLCJuYW1lIjoiSm9zZSIsInJvbGVJZCI6IjYwYzhkYTAzMWM2M2UwNGQyZmY4NTMzZCIsImlhdCI6MTYyMzc4NTg1OH0.Dp85x8U__9IC0VCZnqgq5YHh6qCp_NbEYWfM3LZ4nfU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"orderId\":\"60c907effa0d528b2458dd10\",\n    \"productId\":\"60c8f864ff9b4b75631cdf63\",\n    \"quantity\":10\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/orderdetail/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"orderdetail",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit_Order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGM4ZWFiMGNiMTQwNTY2OWE0NjE1M2YiLCJuYW1lIjoiSm9zZSIsInJvbGVJZCI6IjYwYzhkYTAzMWM2M2UwNGQyZmY4NTMzZCIsImlhdCI6MTYyMzc4NTg1OH0.Dp85x8U__9IC0VCZnqgq5YHh6qCp_NbEYWfM3LZ4nfU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"_id\":\"60c93fb27917fcce8e4ec1a0\",\n    \"orderId\":\"60c907effa0d528b2458dd10\",\n    \"productId\":\"60c8f864ff9b4b75631cdf63\",\n    \"quantity\":12\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/orderdetail/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"orderdetail",
+								"update"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
